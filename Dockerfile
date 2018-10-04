@@ -6,7 +6,7 @@ RUN  echo "hello world" > /tmp/index.html && \
      yum clean all && \
      rm -rf /var/cache/yum
      
-WORKDIR /
+WORKDIR /tmp
 
 EXPOSE 8888
 USER 65535
