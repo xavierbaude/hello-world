@@ -1,7 +1,8 @@
 FROM centos:latest
 LABEL maintainer="Xavier Baude - https://github.com/xavierbaude"
 
-RUN  yum update -y && \
+RUN  echo "hello world" > /tmp/index.html && \
+     yum update -y && \
      yum clean all && \
      rm -rf /var/cache/yum
      
